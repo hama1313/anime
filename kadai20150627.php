@@ -2,7 +2,7 @@
 <html lang="ja">
 	<head>
 		<meta charset="utf8">
-		<title>test33アニメサービスを作る！！！！</title>
+		<title>test11アニメサービスを作る！！！！</title>
 	</head>
 <body>
 <table border="1">
