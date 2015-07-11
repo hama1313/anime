@@ -14,8 +14,15 @@ class User {
 	}
 }
 
+class SuperUser extends User {
+
+	public function supersayHi() {
+		echo "HIIIIII my name is ".$this->name;
+	}
+}
+
 $tom = new User("tom","dummy@dummy.com");
-$bob = new User("bob","dummy@dummybob.com");
+$bob = new SuperUser("bob","dummy@dummybob.com");
 echo $tom->name;
 echo $tom->sayHi();
-echo $bob->sayHi();
+echo $bob->supersayHi();
