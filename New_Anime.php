@@ -11,7 +11,7 @@
     <td>放送年</td><td><?php echo $_POST["year"] ?></td></tr>
     <td>季節</td><td><?php echo $_POST["season"] ?></td></tr>
     <td>ストーリー</td><td><?php echo $_POST["summary"] ?></td></tr>
-    <td>ストーリー</td><td><?php echo $_POST["pv"] ?></td></tr>
+    <td>PV</td><td><?php echo $_POST["pv"] ?></td></tr>
   </tr>
 </table>
 </body>
