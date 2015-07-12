@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2015 年 7 朁E12 日 14:29
+-- Generation Time: 2015 年 7 朁E12 日 14:37
 -- サーバのバージョン： 5.6.24
 -- PHP Version: 5.6.8
 
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `anime` (
   `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `year` year(4) NOT NULL,
   `season` date NOT NULL,
-  `story` text COLLATE utf8_unicode_ci NOT NULL,
+  `summary` text COLLATE utf8_unicode_ci NOT NULL,
   `pv` text COLLATE utf8_unicode_ci NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
