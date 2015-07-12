@@ -7,8 +7,11 @@ var_dump($e->getMessage());
 exit;
 }
 
-$stmt=$dbh->prepare("insert into personal_info(id,name,old)values(?,?,?)");
+/*$stmt=$dbh->prepare("insert into personal_info(id,name,old)values(?,?,?)");
 $stmt->execute(array("N","M","25"));
+*/
+
+
 
 echo "dane!";
 /*$sql = "select * from personal_info";
