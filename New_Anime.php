@@ -5,6 +5,30 @@
 		<title>新作アニメレビュー</title>
 	</head>
 <body>
+<?php
+
+try {
+$dbh=new PDO('mysql:host=localhost;dbname=new_anime','hama','kasaasann');
+} catch (PDOException $e){
+var_dump($e->getMessage());
+exit('データベースを選択できませんでした。');
+}
+
+$title    = $_REQUEST['title'];
+$year     = $_REQUEST['year'];
+$season   = $_REQUEST['season'];
+$summary  = $_REQUEST['summary'];
+$pv       = $_REQUEST['pv'];
+
+$result = $dbh->query("INSERT INTO anime(title,year,season,summary,pv) VALUES('$title','$year','$season','$summary','$pv')");
+if (!$result) {
+  exit('データを登録できませんでした。');
+}
+
+$dbh=null;
+
+?>
+
 <table border="1">
   <tr>
     <td>タイトル</td><td><?php echo $_POST["title"] ?></td></tr>
