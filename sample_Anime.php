@@ -26,4 +26,3 @@ while ($data = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
 $dbh = null;
 ?>
-<br>
