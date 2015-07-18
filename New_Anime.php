@@ -2,7 +2,7 @@
 <html lang="ja">
 	<head>
 		<meta charset="utf8">
-		<title>新作アニメレビュー</title>
+		<title>新作アニメレビュー_登録確認画面</title>
 	</head>
 <body>
 <?php
@@ -36,6 +36,8 @@ $dbh=null;
     <td>季節</td><td><?php echo $_POST["season"] ?></td></tr>
     <td>ストーリー</td><td><?php echo $_POST["summary"] ?></td></tr>
     <td>PV</td><td><?php echo $_POST["pv"] ?></td></tr>
+  
+
   </tr>
 </table>
 </body>
