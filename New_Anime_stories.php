@@ -28,11 +28,12 @@ $dbh=null;
 */
 ?>
 
+
 <table border="1">
   <tr>
     <td>ストーリータイトル</td><td><?php echo $_POST["title"] ?></td></tr>
     <td>あらすじ</td><td><?php echo $_POST["summary"] ?></td></tr>
-    <td>予告</td><td><?php echo $_POST["pv"] ?></td></tr>
+    <td>予告</td><td><?php echo $_POST["preview"] ?></td></tr>
   </tr>
 </table>
 </body>
