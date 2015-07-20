@@ -10,8 +10,8 @@
 try {
 $dbh=new PDO('mysql:host=localhost;dbname=new_anime','hama','kasaasann');
 } catch (PDOException $e){
-var_dump($e->getMessage());
-exit('データベースを選択できませんでした。');
+	var_dump($e->getMessage());
+  exit('データベースを選択できませんでした。');
 }
 
 $title    = $_REQUEST['title'];
@@ -20,8 +20,9 @@ $season   = $_REQUEST['season'];
 $summary  = $_REQUEST['summary'];
 $pv       = $_REQUEST['pv'];
 
-$result = $dbh->query("INSERT INTO anime(title,year,season,summary,pv) VALUES('$title','$year','$season','$summary','$pv')");
-if (!$result) {
+$result = $dbh->query("INSERT INTO anime(title,year,season,summary,pv) 
+	VALUES('$title','$year','$season','$summary','$pv')");
+	if (!$result) {
   exit('データを登録できませんでした。');
 }
 
